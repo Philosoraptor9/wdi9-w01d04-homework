@@ -7,13 +7,27 @@ console.log('here we go again');
 
 // PALINDROME AGAIN
 
-const isWordaPalindrome = (word) => {
-    let reverse = word.split("").reverse().join("");
-    if (reverse === word){
-        return true;
-    } else {
-        return false;
-    }
+// const isWordaPalindrome = (word) => {
+//     let reverse = word.split("").reverse().join("");
+//     if (reverse === word){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(isWordaPalindrome("radar"));
+// console.log(isWordaPalindrome("boston"));
+
+
+// SUM ARRAY
+
+const sumArray = (arr) => {
+    let sum = 0;
+    for (i = 0; i < arr.length; i++){
+    (sum += arr[i]);
+} return sum;
 }
-console.log(isWordaPalindrome("radar"));
-console.log(isWordaPalindrome("boston"));
+console.log(sumArray([10 , 20]));
+
+
+
