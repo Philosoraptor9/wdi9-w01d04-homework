@@ -19,17 +19,6 @@ console.log('here we go again');
 // console.log(isWordaPalindrome("boston"));
 
 
-// SUM ARRAY
-
-// const sumArray = (arr) => {
-//     let sum = 0;
-//     for (i = 0; i < arr.length; i++){
-//     (sum += arr[i]);
-// } return sum;
-// }
-// console.log(sumArray([10 , 20]));
-
-
 // DIGIT SUM
 
 // const sumDigits = (num) => {
@@ -46,9 +35,20 @@ console.log('here we go again');
 
 // PYTHAGORAS
 
-const calculateSide = (sideA, sideB) => {
-    let sideC = sideA * sideB;
-    return(sideC);
-}
+// const calculateSide = (sideA, sideB) => {
+//     let sideC = sideA * sideB;
+//     return(sideC);
+// }
 
-console.log(calculateSide(5, 4));
+// console.log(calculateSide(5, 4));
+
+
+// SUM ARRAY
+
+const sumArray = (arr) => {
+    let sum = 0;
+    for (i = 0; i < arr.length; i++){
+    (sum += arr[i]);
+} return sum;
+}
+console.log(sumArray([10 , 20]));
