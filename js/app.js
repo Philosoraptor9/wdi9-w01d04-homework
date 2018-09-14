@@ -21,13 +21,34 @@ console.log('here we go again');
 
 // SUM ARRAY
 
-const sumArray = (arr) => {
-    let sum = 0;
-    for (i = 0; i < arr.length; i++){
-    (sum += arr[i]);
-} return sum;
+// const sumArray = (arr) => {
+//     let sum = 0;
+//     for (i = 0; i < arr.length; i++){
+//     (sum += arr[i]);
+// } return sum;
+// }
+// console.log(sumArray([10 , 20]));
+
+
+// DIGIT SUM
+
+// const sumDigits = (num) => {
+//     const createArr = num.toString.split(" "); //not a function??
+//     console.log(createArr);
+//     const num1 = parseInt(createArr[0]);
+//     const num2 = parseInt(createArr[1]);
+  
+//     const sumOfArr = num1 + num2;
+//     return sumOfArr;
+//   }
+
+// console.log(sumDigits(42));
+
+// PYTHAGORAS
+
+const calculateSide = (sideA, sideB) => {
+    let sideC = sideA * sideB;
+    return(sideC);
 }
-console.log(sumArray([10 , 20]));
 
-
-
+console.log(calculateSide(5, 4));
