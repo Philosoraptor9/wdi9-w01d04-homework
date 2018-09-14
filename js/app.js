@@ -5,3 +5,15 @@ console.log('here we go again');
 // 2. Console.log just shows a value on the console, return performs spits out a value that has been operated on by the function
 // 3. A function that returns a value is doing what it's supposed to do, or what javascript is being told to do
 
+// PALINDROME AGAIN
+
+const isWordaPalindrome = (word) => {
+    let reverse = word.split("").reverse().join("");
+    if (reverse === word){
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(isWordaPalindrome("radar"));
+console.log(isWordaPalindrome("boston"));
