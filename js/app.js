@@ -45,10 +45,39 @@ console.log('here we go again');
 
 // SUM ARRAY
 
-const sumArray = (arr) => {
-    let sum = 0;
-    for (i = 0; i < arr.length; i++){
-    (sum += arr[i]);
-} return sum;
+// const sumArray = (arr) => {
+//     let sum = 0;
+//     for (i = 0; i < arr.length; i++){
+//     (sum += arr[i]);
+// } return sum;
+// }
+// console.log(sumArray([10 , 20]));
+
+// PRIME NUMBERS
+
+const checkPrime = num => {
+    for(let i = 2, s = Math.sqrt(num); i <= s; i++)
+        if(num % i === 0) 
+    return false; 
+    return num !== 1;
 }
-console.log(sumArray([10 , 20]));
+
+console.log(checkPrime(27));
+console.log(checkPrime(31));
+
+function printPrimes(max) {
+    var sieve = [], i, j, primes = [];
+    for (i = 2; i <= max; ++i) {
+        if (!sieve[i]) {
+            primes.push(i);
+            for (j = i << 1; j <= max; j += i) {
+                sieve[j] = true;
+            }
+        }
+    }
+    return primes;
+}
+
+// shout out to Eratosthenes.
+
+console.log(printPrimes(97));
